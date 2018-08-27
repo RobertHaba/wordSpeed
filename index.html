@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='pl'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto' rel='stylesheet'>
+    <link rel='stylesheet' type='text/css' href='reset.css'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta name='theme-color' content='#383560'>
+</head>
+
+<body class="body">
+    <section class="container container--center-el">
+        <div class="app">
+            <header class="app-header">
+                <h2 class="app-header__h2">Type The Given Words Within <span class="c-aqua" id="currentyTime">3</span> Seconds</h2>
+            </header>
+            <div class="app__box app-content">
+                <p class="app-box__word c-aqua" id="word">
+                    start
+                </p>
+            </div>
+            <div class="app__box">
+                <input type="text" name="word" id="inputWord" class="app-input" placeholder="Start typing...">
+            </div>
+            <div class="app__box box-results">
+                <p class="box-results__text hidden" id="gameOverDisplay">
+                    Game Over. Type '<span class="c-aqua" id="wordAgain">developer</span>' to play again.
+                </p>
+                <p class="box-results__text hidden" id="correctDisplay">
+                    Correct
+                </p>
+            </div>
+            <div class="app__box box-timer">
+                <p class="box-timer__time">
+                    Time Left: <span class="c-aqua" id="timer">3</span>
+                </p>
+            </div>
+            <div class="app__box box-score">
+                <p class="box-score__text">
+                    Score: <span class="c-aqua" id="score">0</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src='main.js'></script>
+</body>
+
+</html>

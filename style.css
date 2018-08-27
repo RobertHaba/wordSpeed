@@ -1,0 +1,119 @@
+.body {
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat';
+    overflow-x: hidden
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.c-aqua {
+    color: #6bc5e4;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    background-color: rgb(74, 88, 105);
+}
+
+.container--center-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    position: relative;
+    display: grid;
+    max-width: 470px;
+    width: 100%;
+    min-height: 500px;
+    color: #DDD;
+    grid-template-rows: repeat(5, auto);
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header__h2 {
+    text-align: center;
+    color: #DDD;
+    font-size: 20px;
+}
+
+.app__box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-box__word {
+    font-size: 40px;
+    text-transform: lowercase;
+}
+
+.app-input {
+    padding: 10px 0px;
+    border: 0;
+    background-color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: rgb(74, 88, 105);
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.box-results {
+    text-align: center;
+}
+
+.box-results__text {
+    font-size: 22px;
+}
+
+.box-timer__time {
+    font-size: 25px;
+}
+
+.box-score__text {
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .body {
+        padding: 0;
+        background-color: rgb(74, 88, 105);
+    }
+    .app-input {
+        width: 90%;
+    }
+    .app {
+        padding: 20px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-height:600px) {
+    .body {
+        padding: 0;
+        background-color: rgb(74, 88, 105);
+    }
+    .app {
+        height: 90%;
+    }
+}
