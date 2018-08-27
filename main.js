@@ -62,7 +62,7 @@
         lastRand = rand
     }
     const matchValue = () => {
-        return (inputWord.value == currentWord.innerText) ? true : false
+        return (inputWord.value.toLowerCase() == currentWord.innerText) ? true : false
     }
     const timer = () => {
         if (userOptions.time === 0) {
